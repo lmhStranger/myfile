@@ -1,3 +1,4 @@
+@import ui-variables
 ### Spring-aop-proxy 源码分析
 主要的类是 ProxyFactory,其中构造方法
 
@@ -5,7 +6,7 @@
         addInterface(proxyInterface);
         addAdvice(interceptor);
     }
-该构造方法通过指定要代理的接口以及请求处理的拦截器来创建一个代理工厂类，然后通过该类的`getProxy（）`方法来得到具体的代理类。
+@text-color-warning该构造方法通过指定要代理的接口以及请求处理的拦截器来创建一个代理工厂类，然后通过该类的`getProxy（）`方法来得到具体的代理类。
 > 通常的代码写法为
 >> new ProxyFactory(proxyInterface,interceptor).getProxy();
 
@@ -15,3 +16,4 @@
 		return createAopProxy().getProxy();
 	}
 上面的方法我们能看到其实是先创建了一个aopProxy
+return shell_exec("echo $input | $markdown_script");
