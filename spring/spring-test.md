@@ -5,7 +5,7 @@
         addInterface(proxyInterface);
         addAdvice(interceptor);
     }
-该构造方法通过指定要代理的接口以及请求处理的拦截器来创建一个代理工厂类，然后通过该类的getProxy（）方法来得到具体的代理类。
+该构造方法通过指定要代理的接口以及请求处理的拦截器来创建一个代理工厂类，然后通过该类的`getProxy（）`方法来得到具体的代理类。
 > 通常的代码写法为
 >> new ProxyFactory(proxyInterface,interceptor).getProxy();
 
@@ -14,4 +14,4 @@
     public Object getProxy() {
 		return createAopProxy().getProxy();
 	}
-上面的方法我们能看到其实是先创建了一个aopProxy 呵呵
+上面的方法我们能看到其实是先创建了一个aopProxy
