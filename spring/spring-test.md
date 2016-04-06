@@ -14,4 +14,4 @@
     public Object getProxy() {
 		return createAopProxy().getProxy();
 	}
-上面的方法我们能看到其实是先创建了一个aopProxy
+上面的方法我们能看到其实是先创建了一个aopProxy 呵呵
